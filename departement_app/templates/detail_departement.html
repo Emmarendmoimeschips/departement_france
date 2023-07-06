@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail du département</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Détail du département {{ numero_departement }}</h1>
+    <h2>Nom du département : {{ nom_departement }}</h2>
+    <a href="{% url 'accueil' %}">Retour à l'accueil</a>
+</body>
+</html>

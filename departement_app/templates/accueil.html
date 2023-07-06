@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emmanuel Augizeau Projet Departement France</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entrez le numéro de votre département :</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="numero_departement">
+        <input type="submit" value="Valider">
+    </form>
+    {% if nom_departement %}
+        <h2>Le nom de votre département est : {{ nom_departement }}</h2>
+    {% endif %}
+</body>
+</html>
